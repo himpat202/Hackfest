@@ -6,6 +6,7 @@ var gallery = document.querySelectorAll('.production-gallery img');
 var navLinks = document.querySelectorAll('.nav-links a');
 
 
+
 window.addEventListener('scroll', function () {
     for (var x = 0; x < gallery.length; x++) {
         if (gallery[x].getBoundingClientRect().top < 700) {
@@ -29,7 +30,11 @@ if(window.outerWidth > 768){
 
 burger.addEventListener('click', burgerNavigation);
 
-
+const person = {
+  fname:" John",
+  lname:" Doe",
+  age: 25
+};
 
 
 function burgerNavigation() {
